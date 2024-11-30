@@ -312,6 +312,7 @@ class _ImageLightboxPageState extends State<_ImageLightboxPage> {
       buildBottomAppBar: _buildBottomAppBar,
       child: SizedBox.expand(
         child: InteractiveViewer(
+          maxScale: 8,
           child: SafeArea(
             child: LightboxHero(
               message: widget.message,
